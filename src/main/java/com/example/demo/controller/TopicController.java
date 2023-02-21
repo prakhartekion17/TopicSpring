@@ -13,7 +13,12 @@ import java.util.List;
 public class TopicController {
 
     @Autowired
-    private static TopicService topicService;
+    private  TopicService topicService;
+
+
+
+
+
 
 
     @GetMapping

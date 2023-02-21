@@ -6,7 +6,8 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TopicRepository extends MongoRepository<Topic,String> {//spring data jpa is a class which is going to implement it
+public interface TopicRepository extends MongoRepository<Topic,String> {
+    Topic findByName(String name);//spring data jpa is a class which is going to implement it
 
 
 }
